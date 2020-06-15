@@ -3,11 +3,16 @@ import time
 
 # every browser exposes an executable file, thought selenium
 # we ned to invoke exe file such as chrome.
-driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+# driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
 
+# driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
+
+driver = webdriver.Ie(executable_path="C:\\IEDriverServer.exe")
+
+driver.maximize_window()
 
 # this is allow to land inside the webapage that you need to access
-driver.get("https://rahulshettyacademy.com/")
+driver.get("https://rahulshettyacademy.com")
 
 # get the website title if we inside or not
 print(driver.title)
