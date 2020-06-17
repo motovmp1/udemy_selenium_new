@@ -2,8 +2,9 @@ from selenium import webdriver
 import time
 
 from selenium.webdriver.support.select import Select
-
-driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
+driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+#driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
+#driver = webdriver.Ie(executable_path="C:\\IEDriverServer.exe")
 
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 print(driver.title)
