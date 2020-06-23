@@ -10,6 +10,8 @@ import time
 driver = webdriver.Ie(executable_path="C:\\IEDriverServer.exe")
 
 driver.maximize_window()
+driver.implicitly_wait(10)
+
 
 # this is allow to land inside the webapage that you need to access
 driver.get("https://rahulshettyacademy.com")
