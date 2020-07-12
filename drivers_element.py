@@ -12,3 +12,4 @@ assert "No results found." not in driver.page_source
 driver.close()
 
 driver.find_elements_by_xpath()
+driver.find_elements_by_xpath("")

@@ -19,3 +19,5 @@ driver.get(start_url)
 print(driver.current_url)
 
 driver.quit()
+driver.find_element_by_xpath("").click()
+driver.find_element_by_xpath("").send_keys()
